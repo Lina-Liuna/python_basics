@@ -34,6 +34,7 @@ L = ["cccc", "b", "dd", "aaa"]
 print(sorted(L))
 print(sorted(L, key=len))
 
+#capitial char bigger than lowercase char
 a=['Pineapple','pen']
 b=['apple','PEN']
 print(a)
@@ -41,9 +42,16 @@ print(b)
 c = a+b
 print(c)
 print(sorted(c,reverse=True))
-
 print(c)
-
 print(sorted(c, key=lambda x: x[::-1]))
 
+#check if two strings are anaram or not
+def check(s1, s2):
+    if sorted(s1) == sorted(s2):
+        return True
+    else:
+        return False
+
+rst = check("listen", "silent")
+print(str(rst))
 
