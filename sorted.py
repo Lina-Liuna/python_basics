@@ -55,3 +55,14 @@ def check(s1, s2):
 rst = check("listen", "silent")
 print(str(rst))
 
+#sort student by age
+student_tuples = [
+    ('join', 'A', 25),
+    ('jane', 'B', 12),
+    ('dave', 'B', 10),
+]
+
+print(sorted(student_tuples, key=lambda x: x[2]))
+
+
+
