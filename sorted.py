@@ -64,5 +64,22 @@ student_tuples = [
 
 print(sorted(student_tuples, key=lambda x: x[2]))
 
+#sort student by age then by name
+student_tuples = [
+    ('join', 'A', 25),
+    ('jane', 'B', 12),
+    ('dave', 'B', 10),
+    ('ava', 'B', 10),
+]
+
+def f(logs):
+    return (logs[2], logs[0])
+
+print(sorted(student_tuples, key=f))
+
+
+
+
+
 
 
